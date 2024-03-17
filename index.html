@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">@jhonn<span>vnbb</span></a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#skills">Skills</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm Jhon !</h1>
+        <h3>Mahasiswa UNILA</h3>
+        <p>
+          "Embrace challenges as stepping stones to success. Your resilience
+          defines you. Believe in your journey, stay focused, and conquer every
+          obstacle. You've got this!"
+        </p>
+        <div class="btn-box">
+          <a href="#">HTML 1%</a>
+          <a href="#">CSS 99%</a>
+        </div>
+      </div>
+      <div class="home-sci">
+        <a href="https://www.youtube.com/@jhonvnababan6072"
+          ><i data-feather="youtube"></i
+        ></a>
+        <a href="https://github.com/jhonvnbb"><i data-feather="github"></i></a>
+        <a href="https://instagram.com/jhonnvnbb?igshid=OGQ5ZDc2ODk2ZA=="
+          ><i data-feather="instagram"></i
+        ></a>
+      </div>
+    </section>
+
+    <section class="tentang" id="tentang">
+      <div class="tentang-content">
+        <h1>Tentang Saya</h1>
+        <p>
+          Saya berasal dari Medan, kota yang kaya akan budaya dan keindahan alam
+          di Sumatera Utara, Indonesia. Saat ini, saya tengah menempuh
+          pendidikan di Universitas Lampung, mengambil jurusan Ilmu Komputer.
+          Kehidupan di Medan telah membentuk karakter saya, memperkaya pandangan
+          hidup, dan memberikan inspirasi untuk mengejar ilmu komputer. Selama
+          kuliah di UNILA, saya terlibat dalam berbagai kegiatan akademis dan
+          ekstrakurikuler, mengasah keterampilan teknis dan soft skills. Selain
+          belajar, saya memiliki minat dalam pengembangan perangkat lunak dan
+          berharap dapat memberikan kontribusi positif dalam dunia teknologi.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h1>?</h1>
+    </section>
+
+    <section class="kontak" id="kontak">
+      <div class="kontak-container">
+        <h1>Kontak Saya</h1>
+        <p>
+          Hubungi saya melalui alamat berikut atau kirim pesan melalui formulir
+          di bawah :
+        </p>
+        <div class="alamat">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127580.57951818146!2d98.96162718128208!3d2.1941492330371526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e0dd84fe820cb%3A0xe9af8fec9c4eae0!2sKec.%20Siborongborong%2C%20Kabupaten%20Tapanuli%20Utara%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1703921790600!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+          <form action="connect.php" method="post" class="kontak-form">
+            <div class="input-group">
+              <i data-feather="user"></i>
+              <label for="nama"></label>
+              <input type="text" placeholder="Nama" id="Nama" name="Nama"/>
+            </div>
+            <div class="input-group">
+              <i data-feather="mail"></i>
+              <label for="email"></label>
+              <input type="text" placeholder="Email" id="Email" name="Email"/>
+            </div>
+            <div class="input-group">
+              <i data-feather="phone"></i>
+              <label for="nophone"></label>
+              <input type="text" placeholder="No HP" id="No_HP" name="No_HP"/>
+            </div>
+            <button type="submit" class="btn"><span>SEND ME</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social">
+        <a href="https://www.youtube.com/@jhonvnababan6072"
+          ><i data-feather="youtube"></i
+        ></a>
+        <a href="https://github.com/jhonvnbb"><i data-feather="github"></i></a>
+        <a href="https://instagram.com/jhonnvnbb?igshid=OGQ5ZDc2ODk2ZA=="
+          ><i data-feather="instagram"></i
+        ></a>
+      </div>
+      <div class="link">
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#skills">Skills</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">Jhon V Nababan</a> | &copy;2023.</p>
+      </div>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

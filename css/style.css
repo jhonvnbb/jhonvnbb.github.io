@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(8, 28, 43);
+  color: #ededed;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 700;
+  color: #31e1cb;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #ededed;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0 0 30px;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  /* color: #00abf0; */
+  color: #ededed;
+  padding: 0 10px;
+  background-color: #31e1cb;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+  border-bottom: 1px solid #31e1cb;
+}
+
+.home-content {
+  max-width: 50%;
+  /* 100px = 10% */
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+  animation: colorChange 1.5s infinite alternate;
+}
+@keyframes colorChange {
+  from {
+    color: #00abf0;
+  }
+  to {
+    color: #31e1cb;
+  }
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-box a:hover {
+  color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+  color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+  background: #00abf0;
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+  width: 100%;
+}
+
+.home-sci {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  color: #00abf0;
+  font-size: 20px;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.home-sci a:hover {
+  color: #081b29;
+}
+
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+}
+
+.home-sci a:hover::before {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.tentang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border-bottom: 1px solid #31e1cb;
+}
+
+/* .tentang-content {
+  max-width: 600px;
+} */
+
+.tentang-content h1 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.85;
+}
+
+.tentang-content p {
+  text-align: justify;
+  margin: 10px;
+  padding: 15px 50px;
+  border-left: 1px solid #31e1cb;
+  width: 750px;
+  font-size: 16px;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border-bottom: 1px solid #31e1cb;
+}
+
+.skills h1 {
+  font-size: 50px;
+  line-height: 1.85;
+  text-align: center;
+}
+
+/* Kontak */
+.kontak {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0 10%; */
+}
+
+/* .kontak-container {
+  max-width: 600px;
+} */
+
+.kontak-container h1 {
+  /* border: 1px solid red; */
+  margin-top: 10%;
+  font-size: 50px;
+  line-height: 1.85;
+  text-align: center;
+}
+
+.kontak-container p {
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+}
+
+.alamat {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+  border: 1px solid #31e1cb;
+  padding: 5px 0 5px 20px;
+  border-radius: 5px;
+}
+
+.kontak-form {
+  margin-left: 50px;
+  width: 500px;
+  height: 350px;
+}
+
+.kontak-form .input-group {
+  width: calc(100% - 20px);
+  padding: 10px 0;
+  margin: 15px 0;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+}
+
+.kontak-form .input-group input {
+  width: 85%;
+  padding: 10px;
+  background-color: #ededed;
+  border-radius: 5px;
+}
+
+/* .kontak-form .btn {
+  background-color: #31e1cb;
+  color: #ededed;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+} */
+
+.btn {
+  position: relative;
+  /* display: inline-block; */
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #ededed;
+  background-color: #31e1cb;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 1s;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: #0056b3;
+  border-radius: 50%;
+  transition: all 1s ease-out;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  width: 100px;
+  height: 0;
+}
+
+.btn:hover {
+  background-color: #31e1cb;
+}
+
+.btn span {
+  position: relative;
+}
+
+.map {
+  height: 380px;
+  width: 500px;
+}
+
+/* Footer */
+footer {
+  background-color: #31e1cb;
+  text-align: center;
+}
+footer .social {
+  border-top: #31e1cb;
+  padding-top: 10px;
+}
+footer .social a {
+  color: #ededed;
+  padding: 12px;
+}
+footer .social a:hover {
+  color: #00abf0;
+}
+footer .link {
+  padding: 5px;
+}
+footer .link a {
+  color: #ededed;
+  text-decoration: none;
+  padding: 12px;
+}
+footer .link a:hover {
+  color: #081b29;
+}
+footer .credit {
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+footer .credit a {
+  color: #00abf0;
+  font-weight: 700;
+  text-decoration: none;
+}
