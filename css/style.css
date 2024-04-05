@@ -51,6 +51,10 @@ body {
   padding: 0 10px;
   background-color: #31e1cb;
 }
+#hamburger-menu{
+  display: none;
+  color: #fff;
+}
 
 .home {
   display: flex;
@@ -61,7 +65,7 @@ body {
 }
 
 .home-content {
-  max-width: 50%;
+  width: 50%;
   /* 100px = 10% */
 }
 
@@ -204,9 +208,9 @@ body {
   border-bottom: 1px solid #31e1cb;
 }
 
-/* .tentang-content {
-  max-width: 600px;
-} */
+.tentang-content {
+  width: 50%;
+}
 
 .tentang-content h1 {
   text-align: center;
@@ -246,9 +250,9 @@ body {
   /* padding: 0 10%; */
 }
 
-/* .kontak-container {
-  max-width: 600px;
-} */
+.kontak-container {
+  max-width: 60%;
+}
 
 .kontak-container h1 {
   /* border: 1px solid red; */
@@ -386,3 +390,83 @@ footer .credit a {
   font-weight: 700;
   text-decoration: none;
 }
+
+@media screen and (max-width:364px) {
+  .logo {
+    margin-top: 10px;
+    font-size: 35px;
+  }  
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .home{
+    width: 725px;
+  }
+  .home-content{
+    width: 325px;
+  }
+  .home-content h1{
+    font-size: 30px;
+  }
+  .home-content h3{
+    font-size: 32px;
+  }
+  .home-content p{
+    font-size: 20px;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 17rem;
+    height: 1100px;
+    transition: 0.3s;
+  }
+  .header .navbar.active {
+    right: 0;
+  }
+  .header .navbar a {
+    color: #010101;
+    display: block;
+    margin: 1.5rem;
+    padding: 8px;
+    font-size: 2rem;
+  }
+  .tentang{
+    width: 725px;
+  }
+  .tentang-content{
+    width: 100%;
+  }
+  .tentang-content p{
+    font-size: 20px;
+    padding-left: 50px;
+    margin: 5px auto;
+    width: 575px;
+  }
+  .skills{
+    width: 725px;
+  }
+  .kontak{
+    height: 100%;
+    width: 725px;
+    margin: 0;
+  }
+  .alamat{
+    flex-direction: column;
+    border: none;
+  }
+  .map{
+    width: 725px;
+  }
+  .kontak-form{
+    margin-top: 20px;
+  }
+  footer{
+    width: 725px;
+  }
+  .link a{
+    font-size: 20px;
+  }
+}  
