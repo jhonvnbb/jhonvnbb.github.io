@@ -1,472 +1,393 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", "sans-serif";
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: rgb(8, 28, 43);
-  color: #ededed;
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-  padding: 30px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  border-radius: 5px;
-}
-
-.logo {
-  font-size: 21px;
-  font-weight: 700;
-  color: #31e1cb;
-  text-decoration: none;
-}
-
-.logo span {
-  color: #ededed;
-}
-
-.navbar a {
-  font-size: 18px;
-  color: #ededed;
-  text-decoration: none;
-  font-weight: 500;
-  margin: 0 0 0 30px;
-  transition: 0.5s;
-}
-
-.navbar a:hover {
-  /* color: #00abf0; */
-  color: #ededed;
-  padding: 0 10px;
-  background-color: #31e1cb;
-}
-#hamburger-menu{
-  display: none;
-  color: #fff;
-}
-
-.home {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  padding: 0 10%;
-  border-bottom: 1px solid #31e1cb;
-}
-
-.home-content {
-  width: 50%;
-  /* 100px = 10% */
-}
-
-.home-content h1 {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.home-content h3 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #00abf0;
-  animation: colorChange 1.5s infinite alternate;
-}
-@keyframes colorChange {
-  from {
-    color: #00abf0;
-  }
-  to {
-    color: #31e1cb;
-  }
-}
-
-.home-content p {
-  font-size: 16px;
-  margin: 20px 0 40px;
-}
-
-.home-content .btn-box {
-  display: flex;
-  justify-content: space-between;
-  width: 345px;
-  height: 50px;
-}
-
-.btn-box a {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 100%;
-  background: #00abf0;
-  border: 2px solid #00abf0;
-  border-radius: 8px;
-  font-size: 19px;
-  color: #081b29;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.btn-box a:hover {
-  color: #00abf0;
-}
-
-.btn-box a:nth-child(2) {
-  background: transparent;
-  color: #00abf0;
-}
-
-.btn-box a:nth-child(2):hover {
-  color: #081b29;
-}
-
-.btn-box a:nth-child(2)::before {
-  background: #00abf0;
-}
-
-.btn-box a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #081b29;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.btn-box a:hover::before {
-  width: 100%;
-}
-
-.home-sci {
-  position: absolute;
-  bottom: 40px;
-  width: 170px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.home-sci a {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 2px solid #00abf0;
-  border-radius: 50%;
-  color: #00abf0;
-  font-size: 20px;
-  text-decoration: none;
-  z-index: 1;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.home-sci a:hover {
-  color: #081b29;
-}
-
-.home-sci a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #00abf0;
-  z-index: -1;
-}
-
-.home-sci a:hover::before {
-  width: 100%;
-  transition: 0.5s;
-}
-
-.tentang {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  border-bottom: 1px solid #31e1cb;
-}
-
-.tentang-content {
-  width: 50%;
-}
-
-.tentang-content h1 {
-  text-align: center;
-  font-size: 50px;
-  line-height: 1.85;
-}
-
-.tentang-content p {
-  text-align: justify;
-  margin: 10px;
-  padding: 15px 50px;
-  border-left: 1px solid #31e1cb;
-  width: 750px;
-  font-size: 16px;
-}
-
-.skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  border-bottom: 1px solid #31e1cb;
-}
-
-.skills h1 {
-  font-size: 50px;
-  line-height: 1.85;
-  text-align: center;
-}
-
-/* Kontak */
-.kontak {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* padding: 0 10%; */
-}
-
-.kontak-container {
-  max-width: 60%;
-}
-
-.kontak-container h1 {
-  /* border: 1px solid red; */
-  margin-top: 10%;
-  font-size: 50px;
-  line-height: 1.85;
-  text-align: center;
-}
-
-.kontak-container p {
-  font-weight: 100;
-  font-style: italic;
-  text-align: center;
-}
-
-.alamat {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 50px 0;
-  border: 1px solid #31e1cb;
-  padding: 5px 0 5px 20px;
-  border-radius: 5px;
-}
-
-.kontak-form {
-  margin-left: 50px;
-  width: 500px;
-  height: 350px;
-}
-
-.kontak-form .input-group {
-  width: calc(100% - 20px);
-  padding: 10px 0;
-  margin: 15px 0;
-  border: 1px solid #3498db;
-  border-radius: 5px;
-}
-
-.kontak-form .input-group input {
-  width: 85%;
-  padding: 10px;
-  background-color: #ededed;
-  border-radius: 5px;
-}
-
-/* .kontak-form .btn {
-  background-color: #31e1cb;
-  color: #ededed;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
-} */
-
-.btn {
-  position: relative;
-  /* display: inline-block; */
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #ededed;
-  background-color: #31e1cb;
-  border: none;
-  font-weight: 600;
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: background-color 0.5s, transform 1s;
-}
-
-.btn::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background: #0056b3;
-  border-radius: 50%;
-  transition: all 1s ease-out;
-  transform: translate(-50%, -50%);
-}
-
-.btn:hover::before {
-  width: 100px;
-  height: 0;
-}
-
-.btn:hover {
-  background-color: #31e1cb;
-}
-
-.btn span {
-  position: relative;
-}
-
-.map {
-  height: 380px;
-  width: 500px;
-}
-
-/* Footer */
-footer {
-  background-color: #31e1cb;
-  text-align: center;
-}
-footer .social {
-  border-top: #31e1cb;
-  padding-top: 10px;
-}
-footer .social a {
-  color: #ededed;
-  padding: 12px;
-}
-footer .social a:hover {
-  color: #00abf0;
-}
-footer .link {
-  padding: 5px;
-}
-footer .link a {
-  color: #ededed;
-  text-decoration: none;
-  padding: 12px;
-}
-footer .link a:hover {
-  color: #081b29;
-}
-footer .credit {
-  font-size: 0.8rem;
-  padding-bottom: 10px;
-}
-footer .credit a {
-  color: #00abf0;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-@media screen and (max-width:364px) {
-  .logo {
-    margin-top: 10px;
-    font-size: 35px;
-  }  
-  #hamburger-menu {
-    display: inline-block;
-  }
-  .home{
-    width: 725px;
-  }
-  .home-content{
-    width: 325px;
-  }
-  .home-content h1{
-    font-size: 30px;
-  }
-  .home-content h3{
-    font-size: 32px;
-  }
-  .home-content p{
-    font-size: 20px;
-  }
-  .header .navbar {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: #fff;
-    width: 17rem;
-    height: 1100px;
-    transition: 0.3s;
-  }
-  .header .navbar.active {
-    right: 0;
-  }
-  .header .navbar a {
-    color: #010101;
-    display: block;
-    margin: 1.5rem;
-    padding: 8px;
-    font-size: 2rem;
-  }
-  .tentang{
-    width: 725px;
-  }
-  .tentang-content{
-    width: 100%;
-  }
-  .tentang-content p{
-    font-size: 20px;
-    padding-left: 50px;
-    margin: 5px auto;
-    width: 575px;
-  }
-  .skills{
-    width: 725px;
-  }
-  .kontak{
-    height: 100%;
-    width: 725px;
+*{
     margin: 0;
-  }
-  .alamat{
-    flex-direction: column;
+    padding: 0;
+    font-family: "Poppins", "sans-serif";
+    text-decoration: none;
     border: none;
-  }
-  .map{
-    width: 725px;
-  }
-  .kontak-form{
-    margin-top: 20px;
-  }
-  footer{
-    width: 725px;
-  }
-  .link a{
+}
+body{
+    background-color: #081b29;
+}
+
+.konten{
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    width: 650px;
+    margin: 85px auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Konten1 Start*/
+.halo{
+    width: 600px;
+    text-align: center;
+    padding: 28px 10px;
+    border-radius: 10px;
+}
+
+.halo h1 {
+    font-size: 50px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: #eee;
+    text-shadow: 1px 2px 8px #00ffee;
+    font-family: 'Indie Flower', cursive;
+}
+
+.halo p {
+    font-size: 16.5px;
+    font-weight: 400;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.halo p span {
+    font-weight: 600;
     font-size: 20px;
+    color: #f38c25;
+    font-style: italic;
+}
+/* Konten1 End*/
+
+/* Konten2 Start */
+.wheel-and-hamster {
+    --dur: 1s;
+    position: relative;
+    width: 12em;
+    height: 12em;
+    font-size: 14px;
   }
-}  
+  
+  .wheel,
+  .hamster,
+  .hamster div,
+  .spoke {
+    position: absolute;
+  }
+  
+  .wheel,
+  .spoke {
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wheel {
+    background: radial-gradient(100% 100% at center,hsla(0,0%,60%,0) 47.8%,hsl(0,0%,60%) 48%);
+    z-index: 2;
+  }
+  
+  .hamster {
+    animation: hamster var(--dur) ease-in-out infinite;
+    top: 50%;
+    left: calc(50% - 3.5em);
+    width: 7em;
+    height: 3.75em;
+    transform: rotate(4deg) translate(-0.8em,1.85em);
+    transform-origin: 50% 0;
+    z-index: 1;
+  }
+  
+  .hamster__head {
+    animation: hamsterHead var(--dur) ease-in-out infinite;
+    background: hsl(30,90%,55%);
+    border-radius: 70% 30% 0 100% / 40% 25% 25% 60%;
+    box-shadow: 0 -0.25em 0 hsl(30,90%,80%) inset,
+          0.75em -1.55em 0 hsl(30,90%,90%) inset;
+    top: 0;
+    left: -2em;
+    width: 2.75em;
+    height: 2.5em;
+    transform-origin: 100% 50%;
+  }
+  
+  .hamster__ear {
+    animation: hamsterEar var(--dur) ease-in-out infinite;
+    background: hsl(0,90%,85%);
+    border-radius: 50%;
+    box-shadow: -0.25em 0 hsl(30,90%,55%) inset;
+    top: -0.25em;
+    right: -0.25em;
+    width: 0.75em;
+    height: 0.75em;
+    transform-origin: 50% 75%;
+  }
+  
+  .hamster__eye {
+    animation: hamsterEye var(--dur) linear infinite;
+    background-color: hsl(0,0%,0%);
+    border-radius: 50%;
+    top: 0.375em;
+    left: 1.25em;
+    width: 0.5em;
+    height: 0.5em;
+  }
+  
+  .hamster__nose {
+    background: hsl(0,90%,75%);
+    border-radius: 35% 65% 85% 15% / 70% 50% 50% 30%;
+    top: 0.75em;
+    left: 0;
+    width: 0.2em;
+    height: 0.25em;
+  }
+  
+  .hamster__body {
+    animation: hamsterBody var(--dur) ease-in-out infinite;
+    background: hsl(30,90%,90%);
+    border-radius: 50% 30% 50% 30% / 15% 60% 40% 40%;
+    box-shadow: 0.1em 0.75em 0 hsl(30,90%,55%) inset,
+          0.15em -0.5em 0 hsl(30,90%,80%) inset;
+    top: 0.25em;
+    left: 2em;
+    width: 4.5em;
+    height: 3em;
+    transform-origin: 17% 50%;
+    transform-style: preserve-3d;
+  }
+  
+  .hamster__limb--fr,
+  .hamster__limb--fl {
+    clip-path: polygon(0 0,100% 0,70% 80%,60% 100%,0% 100%,40% 80%);
+    top: 2em;
+    left: 0.5em;
+    width: 1em;
+    height: 1.5em;
+    transform-origin: 50% 0;
+  }
+  
+  .hamster__limb--fr {
+    animation: hamsterFRLimb var(--dur) linear infinite;
+    background: linear-gradient(hsl(30,90%,80%) 80%,hsl(0,90%,75%) 80%);
+    transform: rotate(15deg) translateZ(-1px);
+  }
+  
+  .hamster__limb--fl {
+    animation: hamsterFLLimb var(--dur) linear infinite;
+    background: linear-gradient(hsl(30,90%,90%) 80%,hsl(0,90%,85%) 80%);
+    transform: rotate(15deg);
+  }
+  
+  .hamster__limb--br,
+  .hamster__limb--bl {
+    border-radius: 0.75em 0.75em 0 0;
+    clip-path: polygon(0 0,100% 0,100% 30%,70% 90%,70% 100%,30% 100%,40% 90%,0% 30%);
+    top: 1em;
+    left: 2.8em;
+    width: 1.5em;
+    height: 2.5em;
+    transform-origin: 50% 30%;
+  }
+  
+  .hamster__limb--br {
+    animation: hamsterBRLimb var(--dur) linear infinite;
+    background: linear-gradient(hsl(30,90%,80%) 90%,hsl(0,90%,75%) 90%);
+    transform: rotate(-25deg) translateZ(-1px);
+  }
+  
+  .hamster__limb--bl {
+    animation: hamsterBLLimb var(--dur) linear infinite;
+    background: linear-gradient(hsl(30,90%,90%) 90%,hsl(0,90%,85%) 90%);
+    transform: rotate(-25deg);
+  }
+  
+  .hamster__tail {
+    animation: hamsterTail var(--dur) linear infinite;
+    background: hsl(0,90%,85%);
+    border-radius: 0.25em 50% 50% 0.25em;
+    box-shadow: 0 -0.2em 0 hsl(0,90%,75%) inset;
+    top: 1.5em;
+    right: -0.5em;
+    width: 1em;
+    height: 0.5em;
+    transform: rotate(30deg) translateZ(-1px);
+    transform-origin: 0.25em 0.25em;
+  }
+  
+  .spoke {
+    animation: spoke var(--dur) linear infinite;
+    background: radial-gradient(100% 100% at center,hsl(0,0%,60%) 4.8%,hsla(0,0%,60%,0) 5%),
+          linear-gradient(hsla(0,0%,55%,0) 46.9%,hsl(0,0%,65%) 47% 52.9%,hsla(0,0%,65%,0) 53%) 50% 50% / 99% 99% no-repeat;
+  }
+  
+  @keyframes hamster {
+    from, to {
+      transform: rotate(4deg) translate(-0.8em,1.85em);
+    }
+  
+    50% {
+      transform: rotate(0) translate(-0.8em,1.85em);
+    }
+  }
+  
+  @keyframes hamsterHead {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(0);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(8deg);
+    }
+  }
+  
+  @keyframes hamsterEye {
+    from, 90%, to {
+      transform: scaleY(1);
+    }
+  
+    95% {
+      transform: scaleY(0);
+    }
+  }
+  
+  @keyframes hamsterEar {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(0);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(12deg);
+    }
+  }
+  
+  @keyframes hamsterBody {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(0);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(-2deg);
+    }
+  }
+  
+  @keyframes hamsterFRLimb {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(50deg) translateZ(-1px);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(-30deg) translateZ(-1px);
+    }
+  }
+  
+  @keyframes hamsterFLLimb {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(-30deg);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(50deg);
+    }
+  }
+  
+  @keyframes hamsterBRLimb {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(-60deg) translateZ(-1px);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(20deg) translateZ(-1px);
+    }
+  }
+  
+  @keyframes hamsterBLLimb {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(20deg);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(-60deg);
+    }
+  }
+  
+  @keyframes hamsterTail {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(30deg) translateZ(-1px);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(10deg) translateZ(-1px);
+    }
+  }
+  
+  @keyframes spoke {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(-1turn);
+    }
+  }
+/* Konten2 End*/
+
+/* Konten3 Start*/
+.visit{
+    margin: 50px 0;
+}
+.box {
+    width: 140px;
+    color: #fff;
+    font-size: 20px;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    background: transparent;
+    font-weight: 600;
+}
+  
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transform: translateX(100%);
+}
+  
+.box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    box-sizing: border-box;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transform: translateX(-100%);
+}
+  
+.box:hover:before {
+    border-color: #00ffee;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+  
+.box:hover:after {
+    border-color: #fff;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+  
+button {
+    cursor: pointer;
+    background: transparent;
+}
+/* Konten3 End */

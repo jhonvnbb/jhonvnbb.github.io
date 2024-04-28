@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+  text-decoration: none;
+}
+
+body {
+  background: #ededed;
+  color: #fff;
+}
+
+/* Sidebar Start */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #081b29;
+  box-shadow: 0 0 10px #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 19px;
+  font-weight: 600;
+  text-shadow: 1px 2px 25px #00ffee;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.image img {
+  width: 95px;
+  height: 100px;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 1px 2px 25px #00ffee;
+  background-color: #ededed;
+}
+
+.page ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page ul li {
+  padding: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.page ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  border-bottom: 1px solid #00ffee;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.page ul li a:hover {
+  background-color: #00ffee;
+  color: #081b29;
+}
+
+.sidebar .copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar .copyright a {
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: none;
+}
+/* Sidebar End */
+
+/* My-Skills Start*/
+.my-skills {
+  display: flex;
+  margin-left: 250px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-content {
+  margin: 50px auto;
+  padding: 25px;
+  box-shadow: 1px 2px 25px #081b29;
+  border-radius: 10px;
+}
+
+.skills-content h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 47px;
+  color: #131313;
+  font-weight: 600;
+}
+
+.skills-content h2 span {
+  letter-spacing: -1px;
+  color: #081b29;
+  text-shadow: 1px 2px 25px #00ffee;
+}
+
+.skills-content p {
+  font-size: 17px;
+  text-align: center;
+  color: #131313;
+}
+
+.mybar {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mybar p{
+  text-align: right;
+  color: #131313;
+  text-shadow: 1px 2px 25px #00ffee;
+}
+
+.left-bar {
+  width: 455px;
+}
+
+.bar1 {
+  width: 100%;
+  background-color: #081b29;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.skills {
+  text-align: right;
+  color: #131313;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.html { 
+  background-color: #31e1cb; 
+  width: 95%;
+}
+
+.css { 
+  background-color: #31e1cb; 
+  width: 90%;
+}
+
+.js { 
+  background-color: #31e1cb;
+  width: 80%;
+}
+
+.php { 
+  background-color: #31e1cb; 
+  width: 65%;
+}
+
+.right-bar{
+  width: 455px;
+}
+
+.bar2 {
+  width: 100%;
+  background-color: #081b29;
+  border-radius: 5px;
+  margin: 7px 0;
+}
+
+.bootstrap { 
+  background-color: #31e1cb; 
+  width: 85%;
+}
+
+.wordpress { 
+  background-color: #31e1cb; 
+  width:60%;
+}
+
+.photoshop { 
+  background-color: #31e1cb;
+  width: 70%;
+}
+
+.reactjs { 
+  background-color: #31e1cb; 
+  width: 40%;
+}
+/* My-Skills End */
+
+/* Konten Start */
+.konten{
+  width: 910px;
+  margin-left:425px;
+  margin-bottom: 50px;
+  background-color: #ccc;
+  padding: 50px;
+  color: #080808;
+  box-shadow: 1px 2px 25px#081b29;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deskripsi h2{ 
+  font-weight: 700;
+  font-size: 43px;
+  text-align: right;
+  letter-spacing: -3px;
+}
+
+.deskripsi p{
+  text-align: right;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.me img{
+  width: 250px;
+  height: auto;
+}
+
+.desk{
+  text-align: left;
+}
+
+.desk h2{
+  font-weight: 700;
+  font-size: 43px;
+  letter-spacing: -3px;
+}
+
+.desk p{
+  font-weight: 400;
+  font-size: 17px;
+}
+/* Konten End */
+
+/* Footer Start */
+.social {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+}
+
+.social a{
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+/* Footer End */

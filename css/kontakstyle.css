@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+  text-decoration: none;
+}
+
+body {
+  background: #ededed;
+  color: #fff;
+}
+
+/* Sidebar Start */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #081b29;
+  box-shadow: 0 0 10px #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 19px;
+  font-weight: 600;
+  text-shadow: 1px 2px 25px #00ffee;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.image img {
+  width: 95px;
+  height: 100px;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 1px 2px 25px #00ffee;
+  background-color: #ededed;
+}
+
+.page ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page ul li {
+  padding: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.page ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  border-bottom: 1px solid #00ffee;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.page ul li a:hover {
+  background-color: #00ffee;
+  color: #081b29;
+}
+
+.sidebar .copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar .copyright a {
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: none;
+}
+/* Sidebar End */
+
+/* Kontak Start*/
+.kontak {
+  height: 100vh;
+  margin-left: 250px;
+  display: flex;
+  align-items: center;
+  color: #131313;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.kontak-container {
+  box-shadow: 1px 2px 25px #081b29;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.koneksi {
+  width: 350px;
+  font-size: 50px;
+  text-shadow:0 0 10px #00ffee;
+  line-height: 1.85;
+  margin: 50px auto;
+}
+
+.koneksi h1{
+  font-size: 80px;
+  text-align: right;
+  letter-spacing: -3px;
+  align-items: center;
+  font-weight: 600;
+}
+.koneksi h2{
+  font-size: 80px;
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+.koneksi h6{
+  margin-top: 15px;
+  float: right;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.my-kontak{
+  width: 600px;
+  padding: 25px;
+}
+
+.my-kontak h4{
+  padding: 25px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  border-bottom: 1px solid #081b29;
+}
+
+.social-kontak {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.social-kontak a{
+  border: 2px solid #081b29;
+  padding: 10px;
+  margin: 15px auto;
+  background-color: #081b29;
+  border-radius: 50%;
+  color: #00ffee;
+  transition: ease 0.7s;
+}
+
+.social-kontak a:hover{
+  color: #081b29;
+  background-color: #00ffee;
+}
+
+form {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 7px;
+  color: #000;
+  margin-bottom: 15px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid #081b29;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px; 
+  background-color: #00ffee;
+  color: #081b29;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.submit:hover {
+  background-color: #081b29;
+  color: #00ffee;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ffee;
+}
+/* Kontak End */
+
+/* Alamat Start */
+.alamat{
+  margin-left: 380px;
+}
+
+.alamat h1{
+  color: #131313;
+  padding-top: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.map{
+  width: 1000px;
+  margin-bottom: 100px;
+  border: 7px solid blue;
+}
+/* Alamat End */
+
+/* Footer Start */
+.social {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+}
+
+.social a{
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+/* Footer End */
